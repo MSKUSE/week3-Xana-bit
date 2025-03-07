@@ -1,22 +1,12 @@
-public class FindGrade{
+public class FindGrade {
+    public static void main(String[] args) {
+        System.out.print("Notunuzu girin: ");
+        int n = Integer.parseInt(System.console().readLine());
 
-    public static void main(String[] args){
-
-        //Get the score from the user as a file parameter
-        //Calculate the grade based on the score
-        //Print the grade to the console
-        // 90 - 100 -> A
-        // 80 - 89 -> B
-        // 70 - 79 -> C
-        // 60 - 69 -> D
-        // 0 - 59 -> F
-
-
-
-
-
+        if (n >= 90) System.out.println("A");
+        else if (n >= 80) System.out.println("B");
+        else if (n >= 70) System.out.println("C");
+        else if (n >= 60) System.out.println("D");
+        else System.out.println("F");
     }
-
-
-
 }
